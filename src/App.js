@@ -17,7 +17,10 @@ function App() {
           <Switch>
             <Route path="/todo">  
               <ToDo/>
-            </Route>  
+            </Route>
+            <Route path="/todo/:id">  
+              <ToDo/>
+            </Route>
             <Route path="/">
               <section className="home">
                 <Link to="/todo"><button className="mainNav">To-Do</button></Link>
