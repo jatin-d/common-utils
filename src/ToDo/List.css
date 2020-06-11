@@ -1,0 +1,21 @@
+ul{
+    list-style-type: none;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+}
+.submitBtn{
+    margin: 15px;
+    width: 50px;
+    background-color:rgb(86, 86, 151);
+    color: white;
+}
+#ListWrapper{
+    padding: 20px;
+}
+h4{
+    padding: 0;
+    margin: 0;
+    color: rgb(71, 32, 106);
+}

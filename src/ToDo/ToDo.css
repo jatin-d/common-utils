@@ -1,0 +1,17 @@
+ul{
+    list-style-type: none;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+}
+button{
+    margin: 5px;
+    padding: 5px;
+}
+#toDoWrapper{
+    padding: 20px;
+}
+.checked{
+    text-decoration: line-through;
+}
