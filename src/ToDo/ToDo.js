@@ -97,16 +97,7 @@ class ToDo extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/todo/:id">
-            {this.state.categories.map(category => {
-              return <List addListItem={this.addListItem} handleCheckbox={this.handleCheckbox} category = {category} />
-            })}
-            <div>
-              <Popup />
-              <button onClick={()=>{window.location.reload()}}>Relode</button>
-            </div> 
-          </Route>
-          <Route path="/">
+        <Route path="/">
             {idSt ? <Redirect to={todoIdUrl} /> : <Redirect to="/"/>}
             <div id="toDoWrapper" className="toDoWrapper">
               <div className="addCatWrapper">
@@ -115,12 +106,21 @@ class ToDo extends React.Component {
                           type="text" 
                           name="category" 
                   />
-                    <input type="submit" 
-                          value="New List" 
-                    />
+                  <input type="submit" 
+                        value="New List" 
+                  />
                 </form>
               </div>         
             </div>
+          </Route>
+          <Route path="/todo/:id">
+            {this.state.categories.map(category => {
+              return <List addListItem={this.addListItem} handleCheckbox={this.handleCheckbox} category = {category} />
+            })}
+            <div>
+              <Popup />
+              <button onClick={()=>{window.location.reload()}}>Relode</button>
+            </div> 
           </Route>
         </Switch>
       </BrowserRouter>

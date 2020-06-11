@@ -18,9 +18,6 @@ function App() {
             <Route path="/todo">  
               <ToDo/>
             </Route>
-            <Route path="/todo/:id">  
-              <ToDo/>
-            </Route>
             <Route path="/">
               <section className="home">
                 <Link to="/todo"><button className="mainNav">To-Do</button></Link>
@@ -29,8 +26,7 @@ function App() {
             </Route>   
           </Switch>
         </BrowserRouter>
-    </main>
-    
+    </main>  
   );
 }
 
